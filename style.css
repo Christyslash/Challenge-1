@@ -1,0 +1,196 @@
+:root{
+    --White:hsl(0,0%,100%);
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(203, 18%, 71%);
+    --Grayish_Blue: hsl(172, 50%, 54%);
+    --Attr_Text: hsl(228, 45%, 44%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    justify-content: space-between;
+    background-size: cover;
+    height: 50%;
+}
+
+ol,
+ul{
+    list-style: none;
+}
+
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+body {
+    font-family:'Karla',sans-serif;
+    font-size: 16px;
+    background-color: #eceff3;
+    display: flex;
+}
+
+.Context {
+    padding-top: 22vh;
+    margin-bottom: 3vh;
+}
+
+.flex-ContainerFull {
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    border-style: outset;
+    border-radius: 10px;
+    text-align: start;
+    margin: auto;
+    justify-content: center;
+}
+
+.containerUp{
+    width: 90vw;
+    height: 30vh;
+    background-color: var(--White);
+    padding: 1.5vw 0vw 0vw 1vw;
+}
+
+.JoinTitle{
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 30px;
+}
+._30Day{
+    color:var(--Bright_Yellow);
+    margin:0.7vw 0vw;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.GainTxt{
+    color: var(--Light_Gray);
+    margin-top: 2vh;
+}
+
+.Flexbox{
+    width: 90vw;
+    color: var(--White);
+    display: flex;
+    height: 25vh;
+}
+
+.displayflex{
+    width: 45vw;
+    height: 25vh;
+    background-color: var(--Cyan);
+    padding: 10px;
+    border: 1px solid;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+Button{
+    background-color: hsl(71, 73%, 54%);
+    color: antiquewhite;
+    font-weight : 700;
+    font-size: 18px;
+    border-radius: 3rem;
+    border: none;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.WhyUs{
+    width: 45vw;
+    border: 1px solid;
+    padding: 10px;
+    height: 25vh;
+    background-color:#5ac5c0;
+    border-bottom-right-radius: 10px;
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a{
+    color: var(--Attr_Text);
+}
+
+@media screen and (min-width : 992px){
+    
+    .Context{
+        display: -ms-grid;
+        display: grid;
+        padding: top 0vh;
+    }
+
+    .ContainerFull{
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .containerUp{
+        width:100vw;
+        height: 33vh;
+        background-color: var(--White);
+    }
+
+    .JoinTitle{
+        color: var(--Cyan);
+    }
+
+    .ContainerDown{
+        color: var(--White);
+        display: block;
+    }
+
+    .flex{
+        width:100vw;
+        height: 33vh;
+        background-color: var(--Cyan);
+    }
+
+    .WhyUs{
+        width:100vw;
+        height: 34vh;
+        background-color: var(--Grayish_Blue);
+    }
+
+    .attribution{
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a{
+        color: var(--Attr_Text);
+    }
+
+}
